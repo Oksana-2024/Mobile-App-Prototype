@@ -1,6 +1,7 @@
+import SectionHero from "../SectionHero/SectionHero";
 
 const Contact = () => {
-    return <div>About</div>;
+    return <>  <SectionHero/></>;
   };
   
   export default Contact;

@@ -1,10 +1,12 @@
+import SectionFeatures from "../SectionFeatures/SectionFeatures"
 import SectionHero from "../SectionHero/SectionHero"
 
 const HomePage = () => {
 return (
-  <div>
+  <>
     <SectionHero/>
-  </div>
+    <SectionFeatures/>
+  </>
 )
 }
      

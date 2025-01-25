@@ -1,5 +1,7 @@
+import SectionHero from "../SectionHero/SectionHero";
+
 const About = () => {
-  return <div>About</div>;
+  return <>  <SectionHero/></>;
 };
 
 export default About;
