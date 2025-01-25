@@ -1,0 +1,86 @@
+:root {
+  --font-main: "Inter", sans-serif;
+  --white: #fff;
+  --main-background: #06071b;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-V.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-V.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-V.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.notPage{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.notFoundText{
+font-weight: 700;
+font-size: 40px;
+text-align: center;
+}
