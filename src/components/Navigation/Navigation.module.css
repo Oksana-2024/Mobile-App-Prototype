@@ -1,0 +1,34 @@
+.navlink {
+}
+
+.link {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: #fcfcfc;
+  text-decoration: none;
+  font-style: normal;
+  display: none;
+}
+
+.active {
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .navlink {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .link {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
