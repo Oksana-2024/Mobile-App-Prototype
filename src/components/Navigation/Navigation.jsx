@@ -1,21 +1,36 @@
-import { NavLink } from "react-router-dom";
 import s from "./Navigation.module.css";
-import clsx from "clsx";
-import { NavHashLink } from "react-router-hash-link";
 
-
-const buildLinkClass = ({ isActive }) => {
-    return clsx(s.link, isActive && s.active);
-  };
-
-export const Navigation = () => {
+const Navigation = () => {
   return (
-    <nav className={s.navlink}>
-      <NavLink className={buildLinkClass} to="/">HOME</NavLink>
-      <NavHashLink className={s.link} activeClassName={s.active} smooth to="/#features">FEATURES</NavHashLink>
-      <NavLink className={buildLinkClass} to="/about">TEAM</NavLink>
-      <NavHashLink className={s.link} activeClassName={s.active} smooth to="/#reviews">TESTIMONIALS</NavHashLink>
-      <NavLink className={buildLinkClass} to="/contact">CONTACT</NavLink>
+    <nav className={s.navigation}>
+      <ul className={s.list}>
+        <li>
+          <a className={s.link} href="/#hero">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a className={s.link} href="/#features">
+            FEATURES
+          </a>
+        </li>
+        <li>
+          <a className={s.link} href="/#team">
+            TEAM
+          </a>
+        </li>
+        <li>
+          <a className={s.link} href="/#reviews">
+            TESTIMONIALS
+          </a>
+        </li>
+        <li>
+          <a className={s.link} href="/#contact">
+            CONTACT
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
+export default Navigation;

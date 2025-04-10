@@ -1,12 +1,13 @@
 import clsx from "clsx"
 import s from "./Container.module.css"
 
-const Container = ({children, isHeader, isHero, isFeatures})=> {
+const Container = ({children, className})=> {
 return (
-    <div className={clsx(s.container, isHeader && s.headerContainer, isHero && s.heroContainer, isFeatures && s.featuresContainer)}>
+    <div className={clsx(s.container, className)}>
         {children}
     </div>
 )
 }
 export default Container 
 
+ 

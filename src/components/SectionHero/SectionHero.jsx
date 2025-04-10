@@ -15,8 +15,8 @@ import decorT2 from "../../assets/images/decor_t@2x.png"
 
 const SectionHero = () => {
   return (
-    <section className={s.heroPage}>
-      <Container isHero={true}>
+    <section className={s.heroPage} id="hero">
+      <Container className={s.heroContainer}>
         <h1 className={s.title}>Introducing Mobileapp</h1>
         <h3 className={s.subtitle}>Download our mobile app today!</h3>
         <ul className={s.list}>

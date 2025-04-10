@@ -1,0 +1,139 @@
+.contactUsPage {
+  background-color: var(--main-background);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: var(--white);
+  position: relative;
+}
+
+.decorImg {
+  position: absolute;
+  width: 100%;
+  height: 645px;
+  top: -160px;
+  left: -47px;
+  z-index: -1;
+}
+
+.contactUsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.socialBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.descr {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.socLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  fill: var(--white);
+}
+
+.contacts {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .contactUsPage {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .decorImg {
+    top: -154px;
+    left: 34px;
+    height: 602px;
+    width: 880px;
+    overflow: visible;
+  }
+
+  .title,
+  .descr {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contactUsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 140px;
+  }
+
+  .title {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .socialBox {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .decorImg {
+    top: -76px;
+    left: 609px;
+    height: 493px;
+    width: 650px;
+  }
+}

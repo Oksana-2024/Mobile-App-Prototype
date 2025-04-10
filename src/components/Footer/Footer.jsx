@@ -1,10 +1,9 @@
-import clsx from "clsx";
 import Container from "../Container/Container";
 import s from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <section className={clsx(s.footerPage, s.line)}>
+    <section className={s.footerPage}>
       <Container>
         <div className={s.footerBorder}>
           <p className={s.footerText}>

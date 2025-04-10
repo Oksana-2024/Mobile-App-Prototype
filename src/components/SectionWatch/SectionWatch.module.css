@@ -1,0 +1,134 @@
+.watchPage {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--main-background);
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+}
+
+.watchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+}
+
+.descrContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.listIcon {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  fill: var(--white);
+}
+
+.image {
+  z-index: 2;
+}
+
+.decor {
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  z-index: 0;
+  width: 306px;
+  height: 324px;
+  border-radius: 50%;
+  rotate: 15deg;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .watchPage {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .watchContainer {
+    gap: 40px;
+  }
+
+  .descrContainer {
+    gap: 24px;
+  }
+
+  .image {
+    width: 401px;
+  }
+
+  .decor {
+    top: 30%;
+    left: 15%;
+    width: 448px;
+    height: 453px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .descrContainer {
+  }
+
+  .watchContainer {
+    flex-direction: row;
+    gap: 161px;
+  }
+
+  .descrContainer {
+    gap: 0;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .text {
+    margin-bottom: 40px;
+  }
+
+  .decor {
+    top: -17%;
+    left: 61%;
+  }
+}

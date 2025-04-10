@@ -5,29 +5,12 @@
   margin: 0 auto;
 }
 
-.headerContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
 
-  .headerContainer {
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-
-  .heroContainer {
-    position: relative;
-  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -35,13 +18,5 @@
     max-width: 1280px;
     padding: 0 16px;
   }
-  .headerContainer {
-    padding-top: 19px;
-    padding-bottom: 19px;
-  }
-
-  .featuresContainer {
-    padding-left: 155px;
-    padding-right: 155px;
-  }
+  
 }

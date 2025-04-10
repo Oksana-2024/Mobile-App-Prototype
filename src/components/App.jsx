@@ -1,24 +1,31 @@
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { lazy } from "react";
-import { Layout } from "./Layout";
+import Footer from "./Footer/Footer";
 
-const Home = lazy(() => import("./Pages/HomePage"));
-const Contact = lazy(() => import("./Pages/Contact"));
-const About = lazy(() => import("./Pages/About"));
-const NotFound = lazy(() => import("./Pages/NotFound"));
+import Header from "./Header/Header";
+import SectionContactUs from "./SectionContactUs/SectionContactUs";
+import SectionFeatures from "./SectionFeatures/SectionFeatures";
+import SectionHero from "./SectionHero/SectionHero";
+import SectionOurTeam from "./SectionOurTeam/SectionOurTeam";
+import SectionReviews from "./SectionReviews/SectionReviews";
+import SectionWatch from "./SectionWatch/SectionWatch";
 
 function App() {
   return (
     <>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
+      <header>
+        <Header />
+      </header>
+      <main className="main">
+        <SectionHero />
+        <SectionFeatures />
+        <SectionWatch />
+        <SectionOurTeam />
+        <SectionReviews />
+        <SectionContactUs />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

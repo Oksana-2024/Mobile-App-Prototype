@@ -3,8 +3,8 @@
   padding-bottom: 127px;
   background-image: url("../../assets/images/iPhone_decor_m.png");
   background-repeat: no-repeat;
-  background-position: -3px 3px;
-  background-size: cover;
+  background-position: 65% 95%;
+  background-size: 320px auto;
   background-color: var(--main-background);
   color: var(--white);
 }
@@ -75,6 +75,11 @@
     padding-bottom: 143px;
     background-image: none;
   }
+
+  .heroContainer {
+    position: relative;
+  }
+  
   .decorImages,
   .phoneImages {
     display: block;

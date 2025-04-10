@@ -1,28 +1,20 @@
 .footerPage {
   background-color: var(--main-background);
-  padding-top: 40px;
+  padding-top: 22px;
   padding-bottom: 22px;
+  border-top: 1px solid var(--white);
 }
 
 .footerText {
   color: var(--white);
   text-align: start;
-  max-width: 183px;
+  max-width: 200px;
   font-weight: 500;
   font-size: 14px;
 }
 
-.footerBorder.line {
-  position: relative;
-}
-
-.line::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 393px;
-  border-radius: 1px;
-  width: 100%;
-  height: 1px;
-  background: var(--white);
+@media screen and (min-width:768px) {
+  .footerText{
+    max-width: 100%;
+  }
 }

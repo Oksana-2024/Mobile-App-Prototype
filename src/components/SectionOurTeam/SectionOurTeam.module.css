@@ -1,0 +1,130 @@
+.ourteamPages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../../assets/images/OurTeam_m_top.png"),
+    url("../../assets/images/OurTeam_m.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 43% 1%, 75% 45%;
+  background-size: 785px 280px, 622px 1000px;
+}
+
+@media screen and (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx) {
+  .ourteamPages {
+    background-image: url("../../assets/images/OurTeam_m_top@2x.png"),
+      url("../../assets/images/OurTeam_m@2x.png");
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemList {
+  padding: 16px 16px 12px;
+  border-radius: 15px;
+  color: var(--white);
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.patel {
+  background: var(--gradient1), var(--main-background);
+}
+
+.kim {
+  background: var(--gradient2), var(--main-background);
+}
+
+.chen {
+  background: var(--gradient3), var(--main-background);
+}
+
+.nguyen {
+  background: var(--gradient4), var(--main-background);
+}
+
+.img {
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .ourteamPages {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: 1% -12%, 75% 45%;
+    background-size: 100% 20%, 100% 50%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .descr {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 32px;
+  }
+
+  .img {
+    width: 296px;
+  }
+
+  .itemList {
+    padding: 20px 20px 12px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .itemList {
+        padding: 12px 14px;
+      }
+
+      .list {
+        flex-wrap: nowrap;
+        gap: 32px;
+      }
+
+      .ourteamPages {
+        
+        background-position: 1% 33%, 75% 57%;
+        background-size: 100% 66%, 100% 50%;
+      }
+}

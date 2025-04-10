@@ -1,0 +1,41 @@
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.img {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subTitle {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.descr {
+  composes: text;
+  line-height: 1.71;
+  margin-bottom: 24px;
+}
+.reviewsPage {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-image: url("../../assets/images/2-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
