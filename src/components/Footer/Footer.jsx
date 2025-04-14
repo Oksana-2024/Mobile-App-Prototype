@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
         <div className={s.footerBorder}>
           <p className={s.footerText}>
-            © 2019 GoIteens Template. All Rights Reserved
+            © 2025 GoIteens Template. All Rights Reserved
           </p>
         </div>
       </Container>

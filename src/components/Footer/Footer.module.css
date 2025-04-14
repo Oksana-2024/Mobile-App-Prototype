@@ -5,6 +5,7 @@
   border-top: 1px solid var(--white);
 }
 
+
 .footerText {
   color: var(--white);
   text-align: start;
@@ -14,7 +15,7 @@
 }
 
 @media screen and (min-width:768px) {
-  .footerText{
+   .footerText{
     max-width: 100%;
   }
 }

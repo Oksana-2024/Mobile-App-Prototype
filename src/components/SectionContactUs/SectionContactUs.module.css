@@ -6,22 +6,25 @@
   position: relative;
 }
 
-.decorImg {
-  position: absolute;
-  width: 100%;
-  height: 645px;
-  top: -160px;
-  left: -47px;
-  z-index: -1;
-}
-
 .contactUsContainer {
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  position: relative;
-  z-index: 5;
+  background-image: url('../../assets/images/contact-us-1-t.png'),
+    url('../../assets/images/contact-us-2-t.png');
+  background-position: -1px -38px, 129px -38px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250px 541px, 250px 541px;
+}
+
+@media screen and (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+.contactUsContainer {
+  background-image: url('../../assets/images/contact-us-1-t@2x.png'),
+    url('../../assets/images/contact-us-2-t@2x.png');
+}
 }
 
 .list {
@@ -73,7 +76,7 @@
 }
 
 .contacts {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -93,12 +96,21 @@
     padding-bottom: 80px;
   }
 
-  .decorImg {
-    top: -154px;
-    left: 34px;
-    height: 602px;
-    width: 880px;
-    overflow: visible;
+  .contactUsContainer {
+    background-image: url('../../assets/images/contact-us-1-t.png'),
+      url('../../assets/images/contact-us-2-t.png');
+    background-position: 5px -57px, 226px -57px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 592px 541px, 592px 541px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    .contactUsContainer {
+      background-image: url('../../assets/images/contact-us-1-t@2x.png'),
+        url('../../assets/images/contact-us-2-t@2x.png');
+    }
   }
 
   .title,
@@ -118,6 +130,19 @@
     grid-template-columns: 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 80px 140px;
+    background-image: url('../../assets/images/footer_decor_d.png');
+    background-position: -41px -162px;
+    background-repeat: no-repeat;
+    background-size: 1280px 728px;
+    overflow: visible;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    .contactUsContainer {
+      background-image: url('../../assets/images/footer_decor_d@2x.png');
+    }
   }
 
   .title {
@@ -128,12 +153,5 @@
   .socialBox {
     grid-column: 1;
     grid-row: 2;
-  }
-
-  .decorImg {
-    top: -76px;
-    left: 609px;
-    height: 493px;
-    width: 650px;
   }
 }

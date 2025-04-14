@@ -1,0 +1,32 @@
+.subTitle {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.descr {
+  composes: text;
+  line-height: 1.71;
+  margin-bottom: 24px;
+}
+
+.imgBox {
+  width: 181px;
+  height: 181px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

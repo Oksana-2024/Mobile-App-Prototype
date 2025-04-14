@@ -1,9 +1,9 @@
 import s from "./Logo.module.css";
 
-const Logo = () => {
+const Logo = ({className}) => {
   return (
     <>
-      <a href="/" className={s.logo}>
+      <a href="/" className={`${s.logo} ${className}`}>
        Mobileapp
       </a>
     </>

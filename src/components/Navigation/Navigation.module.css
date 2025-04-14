@@ -1,14 +1,15 @@
 .link {
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 12px;
   text-align: center;
   color: #fcfcfc;
   text-decoration: none;
   font-style: normal;
 }
 
-.active {
-  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+.link:hover,
+.link:focus {
+  background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,3 +29,4 @@
     text-align: center;
   }
 }
+

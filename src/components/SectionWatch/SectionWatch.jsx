@@ -1,9 +1,9 @@
 import { FaApple } from "react-icons/fa";
 import { GrAndroid } from "react-icons/gr";
-import image1 from "../../assets/images/iPhone_X_m.png";
-import image2 from "../../assets/images/iPhone_X_m@2x.png";
 import s from "./SectionWatch.module.css";
 import Container from "../Container/Container";
+import image1 from "../../assets/images/iPhone_X_m.png";
+import image2 from "../../assets/images/iPhone_X_m@2x.png";
 import decor from "../../assets/images/Shine2.png";
 import decor2x from "../../assets/images/shine@2x.png";
 
@@ -22,12 +22,12 @@ const SectionWatch = () => {
           </p>
           <ul className={s.listIcon}>
             <li>
-              <a className={s.linkIcon} href="http://">
+              <a className={s.linkIcon} href="http://" target="_blank">
                 <FaApple size={30} className={s.icon} />
               </a>
             </li>
             <li>
-              <a className={s.linkIcon} href="http://">
+              <a className={s.linkIcon} href="http://" target="_blank">
                 <GrAndroid size={30} className={s.icon} />
               </a>
             </li>

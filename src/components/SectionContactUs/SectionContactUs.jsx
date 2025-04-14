@@ -6,8 +6,6 @@ import {
 import Container from "../Container/Container";
 import FormContact from "../FormContact/FormContact";
 import s from "./SectionContactUs.module.css";
-import decor1 from "../../assets/images/shine.png"
-import decor2 from "../../assets/images/shine@2x.png"
 
 const SectionContactUs = () => {
   return (
@@ -57,7 +55,6 @@ const SectionContactUs = () => {
             </a>
           </address>
         </div>
-        <img className={s.decorImg} src={decor1} alt="Shine" srcSet={decor2} />
       </Container>
     </section>
   );
